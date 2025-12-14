@@ -1,6 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import WhyChooseUs from './WhyChooseUs';
+import Testimonials from './Testimonials';
+import ImpactStats from './ImpactStats';
+import FeaturedProjects from './FeaturedProjects';
+import ProcessSteps from './ProcessSteps';
 
 interface CarouselSlide {
   id: number;
@@ -265,6 +270,21 @@ export default function Home() {
           </button>
         </div>
       </section>
+
+      {/* Why Choose Us Section */}
+      <WhyChooseUs />
+
+      {/* Impact Stats Section */}
+      <ImpactStats />
+
+      {/* Featured Projects Section */}
+      <FeaturedProjects />
+
+      {/* Process Steps Section */}
+      <ProcessSteps />
+
+      {/* Testimonials Section */}
+      <Testimonials />
     </>
   );
 }
