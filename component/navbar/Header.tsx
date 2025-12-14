@@ -12,6 +12,7 @@ export default function Header() {
     { label: 'About', href: '/about' },
     { label: 'Gallery', href: '/gallery' },
     { label: 'Blog', href: '/blog' },
+    { label: 'Career', href: '/career' },
     { label: 'Contact', href: '/contact' },
   ];
 
