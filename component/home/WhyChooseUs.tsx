@@ -17,7 +17,7 @@ export default function WhyChooseUs() {
     {
       id: 3,
       icon: '🛡️',
-      title: '25-Year Warranty',
+      title: '30-Year Warranty',
       description: 'Industry-leading warranty coverage protecting your investment for decades',
     },
     {

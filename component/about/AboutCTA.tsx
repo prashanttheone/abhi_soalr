@@ -39,7 +39,7 @@ export default function AboutCTA() {
           <div className="hidden sm:block w-px h-6 bg-white/30" />
           <div className="flex items-center gap-2">
             <span className="text-2xl">🛡️</span>
-            <span>25-Year Warranty</span>
+            <span>30-Year Warranty</span>
           </div>
         </div>
       </div>

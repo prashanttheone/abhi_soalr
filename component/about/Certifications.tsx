@@ -101,7 +101,7 @@ export default function Certifications() {
               </div>
               <div>
                 <p className="text-3xl font-bold text-green-600 mb-2">
-                  25-Year Warranty
+                  30-Year Warranty
                 </p>
                 <p className="text-gray-600">
                   Comprehensive warranty on all solar panels and equipment
