@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Green Sun Innovations - Solar Panel Installation",
-  description: "Modern, sustainable solar panel installation services across the United States.",
+  description: "Modern, sustainable solar panel installation services across the India.",
 };
 
 export default function RootLayout({

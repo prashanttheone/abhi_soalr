@@ -92,7 +92,7 @@ export default function WhyChooseUs() {
         <div className="mt-16 text-center">
           <div className="inline-block bg-gradient-to-r from-green-50 to-blue-50 px-8 py-6 rounded-2xl border border-green-200">
             <p className="text-gray-700 text-lg">
-              <span className="font-bold text-green-600">✓ Trusted by 50,000+ customers</span> across the United States
+              <span className="font-bold text-green-600">✓ Trusted by 50,000+ customers</span> across the India
             </p>
           </div>
         </div>

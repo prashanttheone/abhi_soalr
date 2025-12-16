@@ -30,7 +30,7 @@ export default function Timeline() {
     {
       year: '2023',
       title: '50K+ Systems & Industry Leader',
-      description: 'Became one of the leading solar providers in the United States with 35+ states served.',
+      description: 'Became one of the leading solar providers in the India with 35+ states served.',
     },
   ];
 
