@@ -17,7 +17,7 @@ export default function CareerHero() {
               Build Your Career in <span className="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">Clean Energy</span>
             </h1>
             <p className="text-lg text-gray-300 leading-relaxed">
-              Be part of the solar revolution. Join talented teams dedicated to sustainable energy and making a real impact on America's energy future.
+              Be part of the solar revolution. Join talented teams dedicated to sustainable energy and making a real impact on India's energy future.
             </p>
             <button className="px-8 py-3 bg-gradient-to-r from-green-500 to-blue-600 text-white font-semibold rounded-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-fit">
               Explore Opportunities

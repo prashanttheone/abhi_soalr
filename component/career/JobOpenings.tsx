@@ -72,7 +72,7 @@ export default function JobOpenings() {
             Open Positions
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Join our growing team and help lead the solar energy revolution across America.
+            Join our growing team and help lead the solar energy revolution across India.
           </p>
         </div>
 

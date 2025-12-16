@@ -8,7 +8,7 @@ export default function CareerCTA() {
           Ready to Impact the Future of Energy?
         </h2>
         <p className="text-base sm:text-lg text-white/90 max-w-2xl mx-auto mb-8 lg:mb-10 leading-relaxed">
-          Join Green Sun Innovations and be part of a mission to transform how America powers its homes and businesses with clean, sustainable energy.
+          Join Green Sun Innovations and be part of a mission to transform how India powers its homes and businesses with clean, sustainable energy.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
           <button className="px-8 py-3 bg-white text-green-600 font-bold rounded-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 text-base sm:text-lg">

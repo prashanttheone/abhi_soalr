@@ -41,7 +41,7 @@ export default function ImpactStats() {
             Our <span className="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">Impact</span> So Far
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Together, we're making a real difference in renewable energy adoption across America
+            Together, we're making a real difference in renewable energy adoption across India
           </p>
         </div>
 

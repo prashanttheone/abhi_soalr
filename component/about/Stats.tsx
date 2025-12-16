@@ -6,7 +6,7 @@ export default function Stats() {
       icon: '🏢',
       number: '15+',
       label: 'States Served',
-      description: 'Expanding our presence across America',
+      description: 'Expanding our presence across India',
     },
     {
       icon: '⚡',

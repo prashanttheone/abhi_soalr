@@ -5,7 +5,7 @@ export default function Timeline() {
     {
       year: '2015',
       title: 'Green Sun Innovations Founded',
-      description: 'Started with a mission to make solar energy accessible to every American household.',
+      description: 'Started with a mission to make solar energy accessible to every Indian household.',
     },
     {
       year: '2016',
@@ -101,7 +101,7 @@ export default function Timeline() {
           </h3>
           <p className="text-gray-700 text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
             We're committed to reaching 100K+ installations by 2025 and expanding to all 50 states. 
-            Our vision is to make solar energy the primary power source for American homes and businesses.
+            Our vision is to make solar energy the primary power source for Indian homes and businesses.
           </p>
         </div>
       </div>

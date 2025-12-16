@@ -14,7 +14,7 @@ export default function AboutHero() {
               </span>
             </div>
             <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-              Powering America with <span className="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">Sustainable Energy</span>
+              Powering India with <span className="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">Sustainable Energy</span>
             </h1>
             <p className="text-lg text-gray-300 leading-relaxed">
               Since 2015, Green Sun Innovations has been at the forefront of solar energy revolution, transforming homes and businesses across the India. We believe in clean energy, sustainable growth, and customer excellence.

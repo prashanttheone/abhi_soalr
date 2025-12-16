@@ -5,12 +5,12 @@ export default function Certifications() {
     {
       icon: '✓',
       name: 'NABCEP Certified',
-      description: 'North American Board of Certified Energy Practitioners',
+      description: 'North Indian Board of Certified Energy Practitioners',
     },
     {
       icon: '🏆',
       name: 'Inc. 5000',
-      description: 'Ranked among fastest-growing companies in America',
+      description: 'Ranked among fastest-growing companies in India',
     },
     {
       icon: '⭐',

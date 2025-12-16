@@ -68,7 +68,7 @@ export default function MissionVision() {
               </h3>
             </div>
             <p className="text-gray-700 text-base lg:text-lg leading-relaxed">
-              To empower individuals and businesses to transition to clean, sustainable solar energy while providing exceptional service, competitive pricing, and long-term support that transforms how America powers its future.
+              To empower individuals and businesses to transition to clean, sustainable solar energy while providing exceptional service, competitive pricing, and long-term support that transforms how India powers its future.
             </p>
           </div>
 
@@ -83,7 +83,7 @@ export default function MissionVision() {
               </h3>
             </div>
             <p className="text-gray-700 text-base lg:text-lg leading-relaxed">
-              To be the most trusted solar energy provider in America, recognized for innovation, reliability, and a genuine commitment to creating a sustainable world for future generations.
+              To be the most trusted solar energy provider in India, recognized for innovation, reliability, and a genuine commitment to creating a sustainable world for future generations.
             </p>
           </div>
         </div>

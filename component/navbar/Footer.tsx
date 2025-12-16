@@ -44,7 +44,7 @@ export default function Footer() {
               <span className="text-xl font-bold text-white">Green Sun Innovations</span>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
-              Powering homes and businesses across America with sustainable solar energy solutions.
+              Powering homes and businesses across India with sustainable solar energy solutions.
             </p>
           </div>
 
