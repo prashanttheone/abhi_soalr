@@ -55,14 +55,14 @@ export default function Timeline() {
             {milestones.map((milestone, index) => (
               <div
                 key={index}
-                className={`flex flex-col ${
+                className={`flex flex-col ₹{
                   index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
                 } gap-8 lg:gap-0 items-center`}
               >
                 {/* Content */}
                 <div className="w-full lg:w-1/2 lg:px-8">
                   <div
-                    className={`bg-gradient-to-br from-gray-50 to-gray-100 p-6 lg:p-8 rounded-xl border border-gray-200 hover:shadow-lg transition-all duration-300 group ${
+                    className={`bg-gradient-to-br from-gray-50 to-gray-100 p-6 lg:p-8 rounded-xl border border-gray-200 hover:shadow-lg transition-all duration-300 group ₹{
                       index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'
                     }`}
                   >

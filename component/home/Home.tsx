@@ -88,7 +88,7 @@ export default function Home() {
           {carouselSlides.map((slide, index) => (
             <div
               key={slide.id}
-              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ₹{
                 index === currentSlide ? 'opacity-100' : 'opacity-0'
               }`}
             >
@@ -100,7 +100,7 @@ export default function Home() {
               />
 
               {/* Gradient Overlay */}
-              <div className={`absolute inset-0 bg-gradient-to-r ${slide.gradient}`} />
+              <div className={`absolute inset-0 bg-gradient-to-r ₹{slide.gradient}`} />
 
               {/* Dark Overlay for Text Readability */}
               <div className="absolute inset-0 bg-black/30" />
@@ -176,12 +176,12 @@ export default function Home() {
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`transition-all duration-300 rounded-full ${
+              className={`transition-all duration-300 rounded-full ₹{
                 index === currentSlide
                   ? 'bg-white w-8 h-2 sm:w-10'
                   : 'bg-white/50 hover:bg-white/75 w-2 h-2'
               }`}
-              aria-label={`Go to slide ${index + 1}`}
+              aria-label={`Go to slide ₹{index + 1}`}
             />
           ))}
         </div>

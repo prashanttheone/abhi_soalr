@@ -76,13 +76,13 @@ export default function ServicesDetail() {
           {services.map((service, index) => (
             <div
               key={service.id}
-              className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center ${
+              className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center ₹{
                 index % 2 === 1 ? 'lg:grid-cols-2-reverse' : ''
               }`}
             >
               {/* Image */}
               <div
-                className={`relative h-64 sm:h-80 rounded-xl overflow-hidden shadow-lg group ${
+                className={`relative h-64 sm:h-80 rounded-xl overflow-hidden shadow-lg group ₹{
                   index % 2 === 1 ? 'lg:order-2' : ''
                 }`}
               >
@@ -95,7 +95,7 @@ export default function ServicesDetail() {
               </div>
 
               {/* Content */}
-              <div className={`space-y-6 ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
+              <div className={`space-y-6 ₹{index % 2 === 1 ? 'lg:order-1' : ''}`}>
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-blue-600 rounded-lg flex items-center justify-center text-white text-2xl">
                     {service.icon}

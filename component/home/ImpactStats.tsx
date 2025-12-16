@@ -18,7 +18,7 @@ export default function ImpactStats() {
     },
     {
       id: 3,
-      number: '$500M+',
+      number: '10K+',
       label: 'Customer Savings',
       icon: '💰',
       color: 'from-yellow-500 to-orange-600',
@@ -53,7 +53,7 @@ export default function ImpactStats() {
               className="group relative overflow-hidden rounded-2xl p-8 bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 hover:border-green-500 transition-all duration-300"
             >
               {/* Gradient Background Overlay */}
-              <div className={`absolute inset-0 bg-gradient-to-r ${stat.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`} />
+              <div className={`absolute inset-0 bg-gradient-to-r ₹{stat.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`} />
 
               {/* Content */}
               <div className="relative z-10">
@@ -74,7 +74,7 @@ export default function ImpactStats() {
               </div>
 
               {/* Bottom Accent Line */}
-              <div className={`absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r ${stat.color} group-hover:w-full transition-all duration-300`} />
+              <div className={`absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r ₹{stat.color} group-hover:w-full transition-all duration-300`} />
             </div>
           ))}
         </div>

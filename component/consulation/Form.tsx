@@ -73,7 +73,7 @@ export default function ConsultationForm() {
   const roofConditions = ['Excellent', 'Good', 'Fair', 'Poor'];
   const roofAges = ['Less than 5 years', '5-10 years', '10-20 years', '20+ years'];
   const shadingOptions = ['Full Sun (6+ hours)', 'Partial Shade (4-6 hours)', 'Heavy Shade (Less than 4 hours)'];
-  const monthlyBills = ['Under $100', '$100-$200', '$200-$300', '$300-$500', '$500+'];
+  const monthlyBills = ['Under ₹100', '₹100-₹200', '₹200-₹300', '₹300-₹500', '₹500+'];
   const timelineOptions = ['Immediately', '3-6 months', '6-12 months', 'Unsure'];
   const contactMethods = ['Email', 'Phone', 'Both'];
   const states = ['CA', 'TX', 'FL', 'NY', 'PA', 'CO', 'AZ', 'NV', 'OR', 'WA', 'Other'];
