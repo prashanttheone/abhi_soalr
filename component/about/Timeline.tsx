@@ -4,7 +4,7 @@ export default function Timeline() {
   const milestones = [
     {
       year: '2015',
-      title: 'SolarPro Founded',
+      title: 'Green Sun Innovations Founded',
       description: 'Started with a mission to make solar energy accessible to every American household.',
     },
     {
@@ -42,7 +42,7 @@ export default function Timeline() {
             Our Journey
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            From a startup vision to industry leadership, explore the milestones that shaped SolarPro.
+            From a startup vision to industry leadership, explore the milestones that shaped Green Sun Innovations.
           </p>
         </div>
 

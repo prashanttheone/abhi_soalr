@@ -24,14 +24,14 @@ export default function ContactHero() {
                 <span className="text-2xl">📞</span>
                 <div>
                   <p className="font-semibold">Call Us</p>
-                  <p className="text-gray-400">1-800-SOLAR-PRO (1-800-765-2776)</p>
+                  <p className="text-gray-400">+91620029429</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <span className="text-2xl">📧</span>
                 <div>
                   <p className="font-semibold">Email Us</p>
-                  <p className="text-gray-400">info@solarpro.com</p>
+                  <p className="text-gray-400">28point.greenenergy@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">

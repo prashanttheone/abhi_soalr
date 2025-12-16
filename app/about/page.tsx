@@ -7,8 +7,8 @@ import Certifications from '@/component/about/Certifications';
 import AboutCTA from '@/component/about/AboutCTA';
 
 export const metadata = {
-  title: 'About SolarPro | Leading Solar Energy Provider',
-  description: 'Learn about SolarPro, the trusted solar energy company serving 35+ states with 50K+ installations and 4.9/5 customer rating.',
+  title: 'About Green Sun Innovations | Leading Solar Energy Provider',
+  description: 'Learn about Green Sun Innovations, the trusted solar energy company serving 35+ states with 50K+ installations and 4.9/5 customer rating.',
 };
 
 export default function AboutPage() {

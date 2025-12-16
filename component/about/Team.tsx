@@ -4,7 +4,7 @@ export default function Team() {
   const teamMembers = [
     {
       id: 1,
-      name: 'John Anderson',
+      name: 'Brij Kishor Pandey',
       role: 'Founder & CEO',
       bio: 'Solar energy pioneer with 20+ years of industry experience.',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
@@ -12,7 +12,7 @@ export default function Team() {
     },
     {
       id: 2,
-      name: 'Sarah Mitchell',
+      name: 'Mr.Abhi Pandey',
       role: 'Chief Technology Officer',
       bio: 'Expert in renewable energy systems and sustainable technology.',
       image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop',
@@ -20,15 +20,15 @@ export default function Team() {
     },
     {
       id: 3,
-      name: 'Michael Chen',
+      name: 'Nikhil Verma',
       role: 'VP of Operations',
-      bio: 'Leading installation teams across 35+ states nationwide.',
+      bio: 'Leading installation teams across 10+ states nationwide.',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop',
       socials: { linkedin: '#', twitter: '#' },
     },
     {
       id: 4,
-      name: 'Emily Rodriguez',
+      name: 'Kashish Bhardwaj',
       role: 'Head of Customer Success',
       bio: 'Dedicated to delivering exceptional customer experience and support.',
       image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop',

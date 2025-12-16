@@ -7,7 +7,7 @@ export default function Testimonials() {
       name: 'Sarah Mitchell',
       location: 'Denver, CO',
       rating: 5,
-      text: 'SolarPro transformed my home with a seamless installation. The team was professional, punctual, and my energy bills dropped by 60%!',
+      text: 'Green Sun Innovations transformed my home with a seamless installation. The team was professional, punctual, and my energy bills dropped by 60%!',
       image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop',
     },
     {
@@ -15,7 +15,7 @@ export default function Testimonials() {
       name: 'James Richardson',
       location: 'Austin, TX',
       rating: 5,
-      text: 'Best investment for my business! The ROI was faster than expected. SolarPro\'s monitoring system gives me complete visibility into my energy production.',
+      text: 'Best investment for my business! The ROI was faster than expected. Green Sun Innovations\'s monitoring system gives me complete visibility into my energy production.',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
     },
     {
@@ -44,7 +44,7 @@ export default function Testimonials() {
             Loved by <span className="bg-gradient-to-r from-green-500 to-blue-600 bg-clip-text text-transparent">Our Customers</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Real stories from real people who switched to solar with SolarPro
+            Real stories from real people who switched to solar with Green Sun Innovations
           </p>
         </div>
 

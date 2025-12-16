@@ -48,12 +48,12 @@ export default function WhyChooseUs() {
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="h-1 w-12 bg-gradient-to-r from-green-500 to-blue-600" />
             <span className="text-green-600 font-semibold text-sm tracking-wider uppercase">
-              Why Choose SolarPro
+              Why Choose Green Sun Innovations
             </span>
             <div className="h-1 w-12 bg-gradient-to-r from-blue-600 to-green-500" />
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            The <span className="bg-gradient-to-r from-green-500 to-blue-600 bg-clip-text text-transparent">SolarPro Difference</span>
+            The <span className="bg-gradient-to-r from-green-500 to-blue-600 bg-clip-text text-transparent">Green Sun Innovations Difference</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Discover why thousands of homeowners and businesses trust us for their solar energy needs

@@ -80,7 +80,7 @@ export default function Certifications() {
           <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 to-blue-600/20 rounded-2xl blur-3xl" />
           <div className="relative bg-white p-8 lg:p-12 rounded-2xl border-2 border-green-500/30 text-center">
             <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">
-              Why Trust SolarPro?
+              Why Trust Green Sun Innovations?
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>

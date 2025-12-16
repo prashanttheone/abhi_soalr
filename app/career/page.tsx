@@ -4,8 +4,8 @@ import CareerCulture from '@/component/career/CareerCulture';
 import CareerCTA from '@/component/career/CareerCTA';
 
 export const metadata = {
-  title: 'Careers at SolarPro | Join Our Solar Energy Team',
-  description: 'Join SolarPro and build your career in clean energy. Explore open positions, benefits, and our company culture.',
+  title: 'Careers at Green Sun Innovations | Join Our Solar Energy Team',
+  description: 'Join Green Sun Innovations and build your career in clean energy. Explore open positions, benefits, and our company culture.',
 };
 
 export default function CareerPage() {

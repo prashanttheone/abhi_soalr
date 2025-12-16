@@ -4,15 +4,15 @@ export default function Stats() {
   const stats = [
     {
       icon: '🏢',
-      number: '35+',
+      number: '15+',
       label: 'States Served',
       description: 'Expanding our presence across America',
     },
     {
       icon: '⚡',
-      number: '50K+',
+      number: '10K+',
       label: 'Systems Installed',
-      description: 'Transforming homes and businesses',
+      description: ' Combinadly Commercial & Residentils Solar systems installed annually',
     },
     {
       icon: '🌱',
@@ -28,13 +28,13 @@ export default function Stats() {
     },
     {
       icon: '💰',
-      number: '$2.5B',
+      number: '10Cr+',
       label: 'Customer Savings',
       description: 'Lifetime energy bill reductions',
     },
     {
       icon: '👥',
-      number: '500+',
+      number: '50+',
       label: 'Team Members',
       description: 'Dedicated solar professionals',
     },
@@ -86,8 +86,8 @@ export default function Stats() {
         {/* Additional Impact Text */}
         <div className="mt-16 p-8 lg:p-12 bg-gradient-to-r from-green-600/20 to-blue-600/20 rounded-2xl border border-green-500/30 text-center">
           <p className="text-lg lg:text-xl text-gray-100 leading-relaxed">
-            Every solar installation at SolarPro represents a commitment to a sustainable future. 
-            Our customers collectively save <span className="text-green-400 font-bold">$2.5 billion annually</span> on energy costs 
+            Every solar installation at Green Sun Innovations represents a commitment to a sustainable future. 
+            Our customers collectively save <span className="text-green-400 font-bold">10Cr+ annually</span> on energy costs 
             while preventing <span className="text-blue-400 font-bold">15 million tons of CO₂ emissions</span> from entering our atmosphere.
           </p>
         </div>

@@ -6,24 +6,24 @@ export default function ContactInfo() {
       icon: '📞',
       title: 'Call Us',
       description: 'Speak directly with our solar experts',
-      contact: '1-800-SOLAR-PRO',
-      subtext: '(1-800-765-2776)',
-      link: 'tel:1-800-7652776',
+      contact: '+91620029429',
+      subtext: '(+91-620029429)',
+      link: 'tel:+91-620029429',
     },
     {
       icon: '📧',
       title: 'Email Us',
       description: 'Send us your inquiry via email',
-      contact: 'info@solarpro.com',
+      contact: '28point.greenenergy@gmail.com',
       subtext: 'Response within 24 hours',
-      link: 'mailto:info@solarpro.com',
+      link: 'mailto:28point.greenenergy@gmail.com',
     },
     {
       icon: '🏢',
       title: 'Visit Us',
       description: 'Come see our solar installations',
-      contact: 'SolarPro HQ',
-      subtext: '123 Solar Avenue, Denver, CO 80202',
+      contact: 'Green Son Innovation',
+      subtext: 'Nirjalahan, Ratanpura, Gopalganj, Bihar 841501',
       link: '#',
     },
     {
@@ -111,7 +111,7 @@ export default function ContactInfo() {
               Frequently Asked Questions
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Find quick answers to common questions about solar energy and SolarPro.
+              Find quick answers to common questions about solar energy and Green Sun Innovations.
             </p>
           </div>
 

@@ -110,7 +110,7 @@ export default function ContactForm() {
                   Message Sent Successfully!
                 </h3>
                 <p className="text-green-700">
-                  Thank you for contacting SolarPro. We'll respond to your inquiry shortly.
+                  Thank you for contacting Green Sun Innovations. We'll respond to your inquiry shortly.
                 </p>
               </div>
             </div>

@@ -28,7 +28,7 @@ export default function CareerHero() {
           <div className="relative h-96 lg:h-full rounded-2xl overflow-hidden shadow-2xl group">
             <img
               src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=600&fit=crop"
-              alt="SolarPro team collaboration"
+              alt="Green Sun Innovations team collaboration"
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />

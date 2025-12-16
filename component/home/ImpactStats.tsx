@@ -82,7 +82,7 @@ export default function ImpactStats() {
         {/* Detailed Message */}
         <div className="bg-gradient-to-r from-green-500/20 to-blue-500/20 border border-green-500/50 rounded-2xl p-8 lg:p-12 text-center">
           <p className="text-lg lg:text-xl leading-relaxed">
-            Every installation contributes to a cleaner, more sustainable planet. By choosing solar with SolarPro, 
+            Every installation contributes to a cleaner, more sustainable planet. By choosing solar with Green Sun Innovations, 
             <span className="font-bold text-green-400"> you're joining a movement</span> towards energy independence and environmental responsibility.
           </p>
         </div>

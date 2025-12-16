@@ -10,14 +10,14 @@ export default function AboutHero() {
             <div className="flex items-center gap-3">
               <div className="h-1 w-12 bg-gradient-to-r from-green-500 to-blue-600" />
               <span className="text-green-400 font-semibold text-sm tracking-wider">
-                ABOUT SOLARPRO
+                ABOUT Green Sun Innovations
               </span>
             </div>
             <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
               Powering America with <span className="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">Sustainable Energy</span>
             </h1>
             <p className="text-lg text-gray-300 leading-relaxed">
-              Since 2015, SolarPro has been at the forefront of solar energy revolution, transforming homes and businesses across the United States. We believe in clean energy, sustainable growth, and customer excellence.
+              Since 2015, Green Sun Innovations has been at the forefront of solar energy revolution, transforming homes and businesses across the United States. We believe in clean energy, sustainable growth, and customer excellence.
             </p>
             <div className="grid grid-cols-2 gap-4 pt-6">
               <div>

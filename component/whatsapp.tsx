@@ -13,8 +13,8 @@ export default function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-8 right-8 z-40 group"
-      aria-label="Contact SolarPro on WhatsApp - Official Channel"
-      title="Chat with SolarPro on WhatsApp"
+      aria-label="Contact Green Sun Innovations on WhatsApp - Official Channel"
+      title="Chat with Green Sun Innovations on WhatsApp"
     >
       {/* Main Button */}
       <div className="relative">

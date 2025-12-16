@@ -24,8 +24,8 @@ export default function Footer() {
       { label: 'Cookie Policy', href: '#' },
     ],
     Contact: [
-      { label: 'Email: info@solarpro.com', href: 'mailto:info@solarpro.com' },
-      { label: 'Phone: 1-800-SOLAR-PRO', href: 'tel:1-800-7652577' },
+      { label: 'Email: 28point.greenenergy@gmail.com', href: 'mailto:28point.greenenergy@gmail.com' },
+      { label: 'Phone:+91620029429', href: 'tel:+91620029429' },
       { label: 'Hours: Mon-Fri 9AM-6PM EST', href: '#' },
     ],
   };
@@ -41,7 +41,7 @@ export default function Footer() {
               <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-blue-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">☀</span>
               </div>
-              <span className="text-xl font-bold text-white">SolarPro</span>
+              <span className="text-xl font-bold text-white">Green Sun Innovations</span>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
               Powering homes and businesses across America with sustainable solar energy solutions.
@@ -140,7 +140,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="text-center text-sm text-gray-400">
-            <p>&copy; {currentYear} SolarPro. All rights reserved. | Serving multiple U.S. states with excellence.</p>
+            <p>&copy; {currentYear} Green Sun Innovations. All rights reserved. | Serving multiple states of India with excellence.</p>
           </div>
         </div>
       </div>

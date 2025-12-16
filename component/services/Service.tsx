@@ -4,7 +4,7 @@ import ServicesProcess from '@/component/services/ServicesProcess';
 import ServicesCTA from '@/component/services/ServicesCTA';
 
 export const metadata = {
-  title: 'Solar Services | SolarPro Installation & Support',
+  title: 'Solar Services | Green Sun Innovations Installation & Support',
   description: 'Explore our comprehensive solar services: residential, commercial, battery storage, and maintenance solutions.',
 };
 

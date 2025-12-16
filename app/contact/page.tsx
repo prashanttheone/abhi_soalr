@@ -4,8 +4,8 @@ import ContactInfo from '@/component/contact/ContactInfo';
 import ContactCTA from '@/component/contact/ContactCTA';
 
 export const metadata = {
-  title: 'Contact SolarPro | Get Free Solar Consultation',
-  description: 'Contact SolarPro for your free solar energy consultation. Call 1-800-SOLAR-PRO or fill out our contact form.',
+  title: 'Contact Green Sun Innovations | Get Free Solar Consultation',
+  description: 'Contact Green Sun Innovations for your free solar energy consultation. Call+91620029429 or fill out our contact form.',
 };
 
 export default function ContactPage() {
