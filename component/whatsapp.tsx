@@ -5,8 +5,10 @@ export default function WhatsAppButton() {
   const message = 'Hello! I would like to inquire about your solar panel installation services.';
 
   // Create WhatsApp URL
-  const whatsappUrl = `https://wa.me/₹{phoneNumber.replace(/[^0-9]/g, '')}?text=₹{encodeURIComponent(message)}`;
-
+const whatsappUrl = `https://wa.me/${phoneNumber.replace(
+    /[^0-9]/g,
+    ''
+  )}?text=${encodeURIComponent(message)}`;
   return (
     <a
       href={whatsappUrl}
