@@ -3,6 +3,9 @@ import mongoose from 'mongoose';
 // MongoDB URI from environment variables
 const MONGODB_URI = process.env.MONGODB_URI;
 
+if (!MONGODB_URI) {
+    throw new Error('Please define MONGODB_URI environment variable in .env.local');
+}
 // Global variable to cache the connection
 declare global {
     // eslint-disable-next-line no-var
@@ -24,6 +27,10 @@ if (!global.mongoose) {
 export async function connectDB() {
     if (cached.conn) {
         return cached.conn;
+    }
+
+    if (!MONGODB_URI) {
+        throw new Error('MONGODB_URI is not defined');
     }
 
     if (!cached.promise) {

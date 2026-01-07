@@ -18,12 +18,22 @@ export function proxy(request: NextRequest) {
     return NextResponse.redirect(loginUrl);
   }
 
-  return NextResponse.next();
+  // Add pathname to headers for layout detection
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set('x-pathname', path);
+
+  return NextResponse.next({
+    request: {
+      headers: requestHeaders,
+    },
+  });
 }
 
 // Configure which routes to run proxy on
 export const config = {
   matcher: [
     '/admin/:path*', // Protect all admin routes
+    '/login', // Add pathname header for login route
+    '/((?!api|_next/static|_next/image|favicon.ico).*)', // Add pathname header for all other routes
   ],
 };

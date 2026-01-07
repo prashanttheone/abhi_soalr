@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/component/navbar/Header";
 import Footer from "@/component/navbar/Footer";
 import WhatsAppButton from "@/component/whatsapp";
+import { headers } from "next/headers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,22 +21,31 @@ export const metadata: Metadata = {
   description: "Modern, sustainable solar panel installation services across the India.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Get the current pathname from headers
+  const headersList = await headers();
+  const pathname = headersList.get('x-pathname') || '';
+  
+  // Check if current route is admin or login
+  const isAdminRoute = pathname.startsWith('/admin');
+  const isLoginRoute = pathname === '/login';
+  const hideNavigation = isAdminRoute || isLoginRoute;
+
   return (
     <html lang="en">
       <body
         className={`₹{geistSans.variable} ₹{geistMono.variable} antialiased flex flex-col min-h-screen bg-white`}
       >
-        <Header />
+        {!hideNavigation && <Header />}
         <main className="flex-1 w-full">
           {children}
         </main>
-        <Footer />
-        <WhatsAppButton />
+        {!hideNavigation && <Footer />}
+        {!hideNavigation && <WhatsAppButton />}
       </body>
     </html>
   );
