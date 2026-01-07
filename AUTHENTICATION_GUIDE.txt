@@ -1,0 +1,117 @@
+==============================================
+AUTHENTICATION SYSTEM - USAGE GUIDE
+==============================================
+
+✅ SETUP COMPLETE
+
+1. PACKAGES INSTALLED:
+   - bcryptjs (password encryption)
+   - jsonwebtoken (JWT token generation)
+   - @types/bcryptjs
+   - @types/jsonwebtoken
+
+2. FILES CREATED:
+   - /schema/auth.ts - User model with userID, email, encrypted password
+   - /app/api/auth/route.ts - Authentication API (signup & login)
+   - /app/login/page.tsx - Login/Signup page with Ant Design
+   - /lib/auth.ts - Auth helper utilities
+   - .env.local - JWT_SECRET added
+
+3. HOW IT WORKS:
+
+   A. SIGNUP (Create Account):
+      - Navigate to: http://localhost:3000/login
+      - Click "Sign Up" tab
+      - Fill in:
+        * User ID (unique username)
+        * Email (unique)
+        * Password (min 6 chars)
+        * Confirm Password
+      - Submit → Creates user with encrypted password
+      - Returns JWT token (expires in 48 hours)
+      - Redirects to /admin/dashboard
+
+   B. LOGIN:
+      - Navigate to: http://localhost:3000/login
+      - Click "Login" tab
+      - Enter email & password
+      - Submit → Validates credentials
+      - Returns JWT token (expires in 48 hours)
+      - Redirects to /admin/dashboard
+
+4. API ENDPOINTS:
+
+   POST /api/auth
+   ---------------
+   • Signup:
+     Body: { 
+       "action": "signup",
+       "userID": "john_doe",
+       "email": "john@example.com",
+       "password": "password123"
+     }
+     Response: { 
+       "success": true,
+       "token": "eyJhbGc...",
+       "user": { "id": "...", "userID": "john_doe", "email": "john@example.com" }
+     }
+
+   • Login:
+     Body: { 
+       "action": "login",
+       "email": "john@example.com",
+       "password": "password123"
+     }
+     Response: { 
+       "success": true,
+       "token": "eyJhbGc...",
+       "user": { "id": "...", "userID": "john_doe", "email": "john@example.com" }
+     }
+
+   GET /api/auth
+   -------------
+   • Verify Token:
+     Headers: { "Authorization": "Bearer eyJhbGc..." }
+     Response: { 
+       "success": true,
+       "user": { "userId": "...", "userID": "john_doe", "email": "john@example.com" }
+     }
+
+5. TOKEN STORAGE:
+   - Token stored in localStorage as 'authToken'
+   - User data stored in localStorage as 'user'
+   - Token expires after 48 hours
+
+6. SECURITY FEATURES:
+   ✓ Password hashing with bcrypt (10 salt rounds)
+   ✓ JWT token with 48h expiration
+   ✓ Email uniqueness validation
+   ✓ User ID uniqueness validation
+   ✓ Password minimum length (6 chars)
+   ✓ Email format validation
+   ✓ Secure password comparison
+
+7. ENVIRONMENT VARIABLES:
+   Add to .env.local:
+   JWT_SECRET=your-super-secret-jwt-key-change-this-in-production-2024
+
+8. TESTING:
+   • Run: npm run dev
+   • Visit: http://localhost:3000/login
+   • Create account with Sign Up
+   • Login with credentials
+   • Token will be saved automatically
+
+9. HELPER FUNCTIONS (in /lib/auth.ts):
+   - generateToken(payload) - Creates JWT token
+   - verifyToken(token) - Validates JWT token
+   - extractTokenFromHeader(header) - Extracts token from Authorization header
+
+10. NEXT STEPS:
+    - Protect admin routes with token verification
+    - Add middleware for authentication
+    - Add logout functionality
+    - Add password reset feature
+    - Add refresh token mechanism
+
+==============================================

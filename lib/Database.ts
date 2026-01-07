@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 // MongoDB URI from environment variables
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://28pointgreenenergy_db_user:0BFltTSbApQMODMz@cluster0.5pqeh9b.mongodb.net/?appName=Cluster0';
+const MONGODB_URI = process.env.MONGODB_URI;
 
 // Global variable to cache the connection
 declare global {

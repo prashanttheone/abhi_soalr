@@ -1,16 +1,20 @@
 'use client';
 
-import React, { useState } from 'react';
-import { Layout, Menu, theme, App } from 'antd';
+import React, { useState, useEffect } from 'react';
+import { Layout, Menu, theme, App, Button, Dropdown } from 'antd';
 import 'antd/dist/reset.css';
 import {
   DashboardOutlined,
   PictureOutlined,
+  AppstoreOutlined,
+  TeamOutlined,
   MenuFoldOutlined,
   MenuUnfoldOutlined,
+  LogoutOutlined,
+  UserOutlined,
 } from '@ant-design/icons';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 const { Header, Sider, Content } = Layout;
 
@@ -20,10 +24,31 @@ export default function AdminLayout({
   children: React.ReactNode;
 }) {
   const [collapsed, setCollapsed] = useState(false);
+  const [user, setUser] = useState<any>(null);
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
   const pathname = usePathname();
+  const router = useRouter();
+
+  // Get user from localStorage
+  useEffect(() => {
+    const userData = localStorage.getItem('user');
+    if (userData) {
+      setUser(JSON.parse(userData));
+    }
+  }, []);
+
+  // Logout function
+  const handleLogout = () => {
+    // Clear token from cookie
+    document.cookie = 'authToken=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;';
+    // Clear localStorage
+    localStorage.removeItem('authToken');
+    localStorage.removeItem('user');
+    // Redirect to login
+    router.push('/login');
+  };
 
   const menuItems = [
     {
@@ -35,6 +60,16 @@ export default function AdminLayout({
       key: '/admin/images',
       icon: <PictureOutlined />,
       label: <Link href="/admin/images">Images</Link>,
+    },
+    {
+      key: '/admin/gallery',
+      icon: <AppstoreOutlined />,
+      label: <Link href="/admin/gallery">Gallery</Link>,
+    },
+    {
+      key: '/admin/about',
+      icon: <TeamOutlined />,
+      label: <Link href="/admin/about">Team</Link>,
     },
   ];
 
@@ -87,7 +122,40 @@ export default function AdminLayout({
             >
               {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
             </div>
-            <h2 style={{ margin: 0 }}>Admin Panel</h2>
+            <h2 style={{ margin: 0, flex: 1 }}>Admin Panel</h2>
+            
+            {/* User Menu */}
+            <Dropdown
+              menu={{
+                items: [
+                  {
+                    key: 'user',
+                    label: user?.email || 'User',
+                    icon: <UserOutlined />,
+                    disabled: true,
+                  },
+                  {
+                    type: 'divider',
+                  },
+                  {
+                    key: 'logout',
+                    label: 'Logout',
+                    icon: <LogoutOutlined />,
+                    danger: true,
+                    onClick: handleLogout,
+                  },
+                ],
+              }}
+              placement="bottomRight"
+            >
+              <Button
+                type="text"
+                icon={<UserOutlined />}
+                style={{ marginRight: 16 }}
+              >
+                {user?.userID || 'User'}
+              </Button>
+            </Dropdown>
           </Header>
           <Content
             style={{

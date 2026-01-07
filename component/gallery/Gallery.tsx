@@ -1,9 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 interface GalleryImage {
-  id: number;
+  _id: string;
   title: string;
   subtitle: string;
   description: string;
@@ -13,105 +13,27 @@ interface GalleryImage {
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
+  const [galleryImages, setGalleryImages] = useState<GalleryImage[]>([]);
+  const [loading, setLoading] = useState(true);
 
-  const galleryImages: GalleryImage[] = [
-    {
-      id: 1,
-      title: 'Residential Installation',
-      subtitle: 'Expert Solar Panel Installation',
-      description: 'Professional solar panel installation on a residential home with certified technicians ensuring perfect alignment and secure mounting.',
-      image: 'https://images.unsplash.com/photo-1509391366360-2e938aa1ef14?w=500&h=400&fit=crop',
-      category: 'Installation',
-    },
-    {
-      id: 2,
-      title: 'Commercial Solar Array',
-      subtitle: 'Large-Scale Industrial Solution',
-      description: 'Expert installation team working on a large commercial solar array project spanning multiple rooftops.',
-      image: 'https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=500&h=400&fit=crop',
-      category: 'Commercial',
-    },
-    {
-      id: 3,
-      title: 'Rooftop Installation Work',
-      subtitle: 'Safety First Installation Team',
-      description: 'Skilled solar engineers installing panels with precision and safety protocols on residential rooftops.',
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=400&fit=crop',
-      category: 'Installation',
-    },
-    {
-      id: 4,
-      title: 'Solar Panel Testing',
-      subtitle: 'Quality Assurance Process',
-      description: 'Our technicians perform thorough testing and quality checks on all installed solar panels.',
-      image: 'https://images.unsplash.com/photo-1581092335573-f02a6fb4a0db?w=500&h=400&fit=crop',
-      category: 'Testing',
-    },
-    {
-      id: 5,
-      title: 'Battery Storage Integration',
-      subtitle: 'Advanced Energy Storage',
-      description: 'Expert installation of battery storage systems for energy independence and backup power.',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop',
-      category: 'Storage',
-    },
-    {
-      id: 6,
-      title: 'Electrical Connections',
-      subtitle: 'Professional Wiring Installation',
-      description: 'Certified electricians establishing safe and efficient electrical connections for solar systems.',
-      image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=400&fit=crop',
-      category: 'Installation',
-    },
-    {
-      id: 7,
-      title: 'Team Collaboration',
-      subtitle: 'Expert Installation Crew',
-      description: 'Experienced solar engineers and technicians working together to deliver quality installations.',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop',
-      category: 'Team',
-    },
-    {
-      id: 8,
-      title: 'System Monitoring',
-      subtitle: 'Real-Time Performance Tracking',
-      description: 'Our team monitors system performance to ensure optimal energy production and efficiency.',
-      image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=400&fit=crop',
-      category: 'Monitoring',
-    },
-    {
-      id: 9,
-      title: 'Residential Solar Array',
-      subtitle: 'Home Energy Independence',
-      description: 'Beautiful solar panel installation bringing clean energy to residential properties.',
-      image: 'https://images.unsplash.com/photo-1509391366360-2e938aa1ef14?w=500&h=400&fit=crop',
-      category: 'Residential',
-    },
-    {
-      id: 10,
-      title: 'Maintenance & Support',
-      subtitle: 'Ongoing System Care',
-      description: 'Regular maintenance and cleaning of solar panels to ensure peak performance.',
-      image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=400&fit=crop',
-      category: 'Maintenance',
-    },
-    {
-      id: 11,
-      title: 'Commercial Installation Site',
-      subtitle: 'Large-Scale Project Execution',
-      description: 'Expert team executing a large commercial solar installation project with multiple units.',
-      image: 'https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=500&h=400&fit=crop',
-      category: 'Commercial',
-    },
-    {
-      id: 12,
-      title: 'Final Inspection',
-      subtitle: 'Quality Verification Process',
-      description: 'Final inspection and verification ensuring all installations meet our high quality standards.',
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=400&fit=crop',
-      category: 'Testing',
-    },
-  ];
+  // Fetch gallery images from API
+  useEffect(() => {
+    const fetchGalleryImages = async () => {
+      try {
+        const response = await fetch('/api/gallery');
+        const result = await response.json();
+        if (result.success) {
+          setGalleryImages(result.data);
+        }
+      } catch (error) {
+        console.error('Error fetching gallery images:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchGalleryImages();
+  }, []);
 
   return (
     <section className="w-full py-16 lg:py-24 bg-white">
@@ -126,11 +48,22 @@ export default function Gallery() {
           </p>
         </div>
 
-        {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        {/* Loading State */}
+        {loading ? (
+          <div className="text-center py-12">
+            <div className="inline-block h-12 w-12 animate-spin rounded-full border-4 border-solid border-green-500 border-r-transparent"></div>
+            <p className="mt-4 text-gray-600">Loading gallery...</p>
+          </div>
+        ) : galleryImages.length === 0 ? (
+          <div className="text-center py-12">
+            <p className="text-gray-600">No gallery images available yet.</p>
+          </div>
+        ) : (
+          /* Gallery Grid */
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {galleryImages.map((item) => (
             <div
-              key={item.id}
+              key={item._id}
               onClick={() => setSelectedImage(item)}
               className="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
             >
@@ -177,7 +110,8 @@ export default function Gallery() {
               </div>
             </div>
           ))}
-        </div>
+          </div>
+        )}
       </div>
 
       {/* Modal */}

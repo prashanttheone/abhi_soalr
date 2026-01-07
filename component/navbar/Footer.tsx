@@ -7,10 +7,10 @@ export default function Footer() {
 
   const footerLinks = {
     Services: [
-      { label: 'Residential Solar', href: '/service' },
-      { label: 'Commercial Solar', href: '/service' },
-      { label: 'Solar Maintenance', href: '/service' },
-      { label: 'Battery Storage', href: '/service' },
+      { label: 'Residential Solar', href: '/service#residential' },
+      { label: 'Commercial Solar', href: '/service#commercial' },
+      { label: 'Solar Maintenance', href: '/service#maintenance' },
+      { label: 'Battery Storage', href: '/service#storage' },
     ],
     Company: [
       { label: 'About Us', href: '/about' },
