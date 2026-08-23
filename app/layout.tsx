@@ -48,7 +48,7 @@ export default async function RootLayout({
         {!hideNavigation && <Footer />}
         {!hideNavigation && <WhatsAppButton />}
       </body>
-      <GoogleAnalytics gaId="G-YOUR_MEASUREMENT_ID" />
+      <GoogleAnalytics gaId="G-H9BLRHQCQ4" />
     </html>
   );
 }
