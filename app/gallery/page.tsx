@@ -1,5 +1,4 @@
 import { gallerySeo } from '@/lib/seo/gallerySeo';
-'use client';
 
 import Gallery from '@/component/gallery/Gallery';
 

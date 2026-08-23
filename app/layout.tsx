@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { GoogleAnalytics } from '@next/third-parties/google';
 import "./globals.css";
 import Header from "@/component/navbar/Header";
 import Footer from "@/component/navbar/Footer";
@@ -47,6 +48,7 @@ export default async function RootLayout({
         {!hideNavigation && <Footer />}
         {!hideNavigation && <WhatsAppButton />}
       </body>
+      <GoogleAnalytics gaId="G-YOUR_MEASUREMENT_ID" />
     </html>
   );
 }
