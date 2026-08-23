@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
+import { locationSeoData } from './locationdata';
 
 export const careerSeo: Metadata = {
-  title: 'Careers at Abhi Solar | Join the Renewable Energy Revolution',
-  description: 'Looking for a career in renewable energy? Join Abhi Solar and help us build a greener India. Explore open positions for solar engineers, sales, and installation experts.',
+  title: 'Careers at BRL RENEWABLE ENERGIES PVT LTD | Join the Renewable Energy Revolution',
+  description: 'Looking for a career in renewable energy? Join BRL RENEWABLE ENERGIES PVT LTD and help us build a greener India. Explore open positions for solar engineers, sales, and installation experts.',
   keywords: [
+    ...(locationSeoData.keywords as string[]),
     'renewable energy jobs in Surat',
     'solar installation technician jobs in Hyderabad',
     'solar installation technician jobs in Surat',
@@ -37,7 +39,7 @@ export const careerSeo: Metadata = {
     'solar engineer jobs in india',
     'solar project manager jobs in india',
     'solar jobs in Hyderabad',
-    'careers at abhi solar',
+    'careers at BRL RENEWABLE ENERGIES PVT LTD',
     'solar sales salary',
     'solar autocad designer salary',
     'solar jobs in Pune',
@@ -275,25 +277,25 @@ export const careerSeo: Metadata = {
     'reduce electricity bill 9',
     'reduce electricity bill 10'
   ],
-  authors: [{ name: 'Abhi Solar' }],
-  creator: 'Abhi Solar',
-  publisher: 'Abhi Solar',
+  authors: [{ name: 'BRL RENEWABLE ENERGIES PVT LTD' }],
+  creator: 'BRL RENEWABLE ENERGIES PVT LTD',
+  publisher: 'BRL RENEWABLE ENERGIES PVT LTD',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   openGraph: {
-    title: 'Careers at Abhi Solar | Join the Renewable Energy Revolution',
-    description: 'Looking for a career in renewable energy? Join Abhi Solar and help us build a greener India. Explore open positions for solar engineers, sales, and installation experts.',
+    title: 'Careers at BRL RENEWABLE ENERGIES PVT LTD | Join the Renewable Energy Revolution',
+    description: 'Looking for a career in renewable energy? Join BRL RENEWABLE ENERGIES PVT LTD and help us build a greener India. Explore open positions for solar engineers, sales, and installation experts.',
     url: 'https://makingindiagreen.in',
-    siteName: 'Abhi Solar',
+    siteName: 'BRL RENEWABLE ENERGIES PVT LTD',
     images: [
       {
         url: 'https://makingindiagreen.in/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Careers at Abhi Solar | Join the Renewable Energy Revolution',
+        alt: 'Careers at BRL RENEWABLE ENERGIES PVT LTD | Join the Renewable Energy Revolution',
       },
     ],
     locale: 'en_IN',
@@ -301,8 +303,8 @@ export const careerSeo: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Careers at Abhi Solar | Join the Renewable Energy Revolution',
-    description: 'Looking for a career in renewable energy? Join Abhi Solar and help us build a greener India. Explore open positions for solar engineers, sales, and installation experts.',
+    title: 'Careers at BRL RENEWABLE ENERGIES PVT LTD | Join the Renewable Energy Revolution',
+    description: 'Looking for a career in renewable energy? Join BRL RENEWABLE ENERGIES PVT LTD and help us build a greener India. Explore open positions for solar engineers, sales, and installation experts.',
     creator: '@abhisolar',
     images: ['https://makingindiagreen.in/images/twitter-image.jpg'],
   },

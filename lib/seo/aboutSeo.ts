@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
+import { locationSeoData } from './locationdata';
 
 export const aboutSeo: Metadata = {
-  title: 'About Abhi Solar | Our Mission to Power India with Solar Energy',
-  description: 'Learn about Abhi Solar, a leading solar EPC company in India dedicated to providing high-quality, affordable solar energy solutions for a sustainable future.',
+  title: 'About BRL RENEWABLE ENERGIES PVT LTD | Our Mission to Power India with Solar Energy',
+  description: 'Learn about BRL RENEWABLE ENERGIES PVT LTD, a leading solar EPC company in India dedicated to providing high-quality, affordable solar energy solutions for a sustainable future.',
   keywords: [
+    ...(locationSeoData.keywords as string[]),
     'reliable solar installers in Chennai',
     'trusted solar brand in Telangana',
     'trusted solar brand in Delhi',
@@ -43,7 +45,7 @@ export const aboutSeo: Metadata = {
     'reliable solar installers in Pune',
     'reliable solar installers in Surat',
     'trusted solar brand in MP',
-    'abhi solar company profile',
+    'BRL RENEWABLE ENERGIES PVT LTD company profile',
     'biggest solar companies in Delhi',
     'top solar EPC company in Mumbai',
     'trusted solar brand in Rajasthan',
@@ -54,7 +56,7 @@ export const aboutSeo: Metadata = {
     'biggest solar companies in Punjab',
     'solar project developers',
     'top solar EPC company in Chennai',
-    'about abhi solar',
+    'about BRL RENEWABLE ENERGIES PVT LTD',
     'top solar EPC company in Nagpur',
     'reliable solar installers in Ahmedabad',
     'top solar EPC company in Indore',
@@ -275,25 +277,25 @@ export const aboutSeo: Metadata = {
     'reduce electricity bill 9',
     'reduce electricity bill 10'
   ],
-  authors: [{ name: 'Abhi Solar' }],
-  creator: 'Abhi Solar',
-  publisher: 'Abhi Solar',
+  authors: [{ name: 'BRL RENEWABLE ENERGIES PVT LTD' }],
+  creator: 'BRL RENEWABLE ENERGIES PVT LTD',
+  publisher: 'BRL RENEWABLE ENERGIES PVT LTD',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   openGraph: {
-    title: 'About Abhi Solar | Our Mission to Power India with Solar Energy',
-    description: 'Learn about Abhi Solar, a leading solar EPC company in India dedicated to providing high-quality, affordable solar energy solutions for a sustainable future.',
+    title: 'About BRL RENEWABLE ENERGIES PVT LTD | Our Mission to Power India with Solar Energy',
+    description: 'Learn about BRL RENEWABLE ENERGIES PVT LTD, a leading solar EPC company in India dedicated to providing high-quality, affordable solar energy solutions for a sustainable future.',
     url: 'https://makingindiagreen.in',
-    siteName: 'Abhi Solar',
+    siteName: 'BRL RENEWABLE ENERGIES PVT LTD',
     images: [
       {
         url: 'https://makingindiagreen.in/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'About Abhi Solar | Our Mission to Power India with Solar Energy',
+        alt: 'About BRL RENEWABLE ENERGIES PVT LTD | Our Mission to Power India with Solar Energy',
       },
     ],
     locale: 'en_IN',
@@ -301,8 +303,8 @@ export const aboutSeo: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Abhi Solar | Our Mission to Power India with Solar Energy',
-    description: 'Learn about Abhi Solar, a leading solar EPC company in India dedicated to providing high-quality, affordable solar energy solutions for a sustainable future.',
+    title: 'About BRL RENEWABLE ENERGIES PVT LTD | Our Mission to Power India with Solar Energy',
+    description: 'Learn about BRL RENEWABLE ENERGIES PVT LTD, a leading solar EPC company in India dedicated to providing high-quality, affordable solar energy solutions for a sustainable future.',
     creator: '@abhisolar',
     images: ['https://makingindiagreen.in/images/twitter-image.jpg'],
   },

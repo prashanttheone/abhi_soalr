@@ -38,10 +38,8 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">☀</span>
-              </div>
-              <span className="text-xl font-bold text-white">Green Sun Innovations</span>
+              <img src="/logo.png" alt="BRL Renewable Energies" className="h-12 w-auto object-contain bg-white rounded-full p-0.5 shadow-sm" />
+              <span className="text-xl font-bold text-white">BRL RENEWABLE ENERGIES PVT LTD</span>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
               Powering homes and businesses across India with sustainable solar energy solutions.
@@ -140,7 +138,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="text-center text-sm text-gray-400">
-            <p>&copy; {currentYear} Green Sun Innovations. All rights reserved. | Serving multiple states of India with excellence.</p>
+            <p>&copy; {currentYear} BRL RENEWABLE ENERGIES PVT LTD. All rights reserved. | Serving multiple states of India with excellence.</p>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const biharSeo: Metadata = {
   title: 'Top Solar Energy Company in Bihar | Install Rooftop Solar in All Districts',
-  description: 'Abhi Solar provides top-notch solar EPC services across all 38 districts of Bihar. From Patna to Gaya, get the best rooftop solar panels, commercial installations, and BREDA subsidies.',
+  description: 'BRL RENEWABLE ENERGIES PVT LTD provides top-notch solar EPC services across all 38 districts of Bihar. From Patna to Gaya, get the best rooftop solar panels, commercial installations, and BREDA subsidies.',
   keywords: [
     '5kW solar system price in Darbhanga',
     'solar street light in West Champaran',
@@ -2205,14 +2205,14 @@ export const biharSeo: Metadata = {
     'solar power plant setup in Araria',
     'solar panel cleaning in Arwal'
   ],
-  authors: [{ name: 'Abhi Solar' }],
-  creator: 'Abhi Solar',
-  publisher: 'Abhi Solar',
+  authors: [{ name: 'BRL RENEWABLE ENERGIES PVT LTD' }],
+  creator: 'BRL RENEWABLE ENERGIES PVT LTD',
+  publisher: 'BRL RENEWABLE ENERGIES PVT LTD',
   openGraph: {
     title: 'Top Solar Energy Company in Bihar | Install Rooftop Solar in All Districts',
-    description: 'Abhi Solar provides top-notch solar EPC services across all 38 districts of Bihar. From Patna to Gaya, get the best rooftop solar panels, commercial installations, and BREDA subsidies.',
+    description: 'BRL RENEWABLE ENERGIES PVT LTD provides top-notch solar EPC services across all 38 districts of Bihar. From Patna to Gaya, get the best rooftop solar panels, commercial installations, and BREDA subsidies.',
     url: 'https://makingindiagreen.in/locations/states/bihar',
-    siteName: 'Abhi Solar',
+    siteName: 'BRL RENEWABLE ENERGIES PVT LTD',
     images: [
       {
         url: 'https://makingindiagreen.in/images/bihar-solar-og.jpg',

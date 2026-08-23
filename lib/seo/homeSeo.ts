@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
+import { locationSeoData } from './locationdata';
 
 export const homeSeo: Metadata = {
-  title: 'Top Solar EPC Company in India | Residential & Commercial Solar | Abhi Solar',
-  description: 'Abhi Solar provides the best solar energy solutions across India. Save up to 90% on electricity bills with our rooftop solar panels for home, office, and factory.',
+  title: 'Top Solar EPC Company in India | Residential & Commercial Solar | BRL RENEWABLE ENERGIES PVT LTD',
+  description: 'BRL RENEWABLE ENERGIES PVT LTD provides the best solar energy solutions across India. Save up to 90% on electricity bills with our rooftop solar panels for home, office, and factory.',
   keywords: [
+    ...(locationSeoData.keywords as string[]),
     'rooftop solar installation in Ahmedabad',
     '20kW rooftop solar price in india',
     '500kW off grid solar price in india',
@@ -275,25 +277,25 @@ export const homeSeo: Metadata = {
     'solar benefits 11',
     'solar benefits 12'
   ],
-  authors: [{ name: 'Abhi Solar' }],
-  creator: 'Abhi Solar',
-  publisher: 'Abhi Solar',
+  authors: [{ name: 'BRL RENEWABLE ENERGIES PVT LTD' }],
+  creator: 'BRL RENEWABLE ENERGIES PVT LTD',
+  publisher: 'BRL RENEWABLE ENERGIES PVT LTD',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   openGraph: {
-    title: 'Top Solar EPC Company in India | Residential & Commercial Solar | Abhi Solar',
-    description: 'Abhi Solar provides the best solar energy solutions across India. Save up to 90% on electricity bills with our rooftop solar panels for home, office, and factory.',
+    title: 'Top Solar EPC Company in India | Residential & Commercial Solar | BRL RENEWABLE ENERGIES PVT LTD',
+    description: 'BRL RENEWABLE ENERGIES PVT LTD provides the best solar energy solutions across India. Save up to 90% on electricity bills with our rooftop solar panels for home, office, and factory.',
     url: 'https://makingindiagreen.in',
-    siteName: 'Abhi Solar',
+    siteName: 'BRL RENEWABLE ENERGIES PVT LTD',
     images: [
       {
         url: 'https://makingindiagreen.in/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Top Solar EPC Company in India | Residential & Commercial Solar | Abhi Solar',
+        alt: 'Top Solar EPC Company in India | Residential & Commercial Solar | BRL RENEWABLE ENERGIES PVT LTD',
       },
     ],
     locale: 'en_IN',
@@ -301,8 +303,8 @@ export const homeSeo: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Top Solar EPC Company in India | Residential & Commercial Solar | Abhi Solar',
-    description: 'Abhi Solar provides the best solar energy solutions across India. Save up to 90% on electricity bills with our rooftop solar panels for home, office, and factory.',
+    title: 'Top Solar EPC Company in India | Residential & Commercial Solar | BRL RENEWABLE ENERGIES PVT LTD',
+    description: 'BRL RENEWABLE ENERGIES PVT LTD provides the best solar energy solutions across India. Save up to 90% on electricity bills with our rooftop solar panels for home, office, and factory.',
     creator: '@abhisolar',
     images: ['https://makingindiagreen.in/images/twitter-image.jpg'],
   },

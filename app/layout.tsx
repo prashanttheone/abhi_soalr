@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Green Sun Innovations - Solar Panel Installation",
+  title: "BRL RENEWABLE ENERGIES PVT LTD - Solar Panel Installation",
   description: "Modern, sustainable solar panel installation services across the India.",
 };
 

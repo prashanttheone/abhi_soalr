@@ -4,7 +4,7 @@ export default function Timeline() {
   const milestones = [
     {
       year: '2015',
-      title: 'Green Sun Innovations Founded',
+      title: 'BRL RENEWABLE ENERGIES PVT LTD Founded',
       description: 'Started with a mission to make solar energy accessible to every Indian household.',
     },
     {
@@ -42,7 +42,7 @@ export default function Timeline() {
             Our Journey
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            From a startup vision to industry leadership, explore the milestones that shaped Green Sun Innovations.
+            From a startup vision to industry leadership, explore the milestones that shaped BRL RENEWABLE ENERGIES PVT LTD.
           </p>
         </div>
 

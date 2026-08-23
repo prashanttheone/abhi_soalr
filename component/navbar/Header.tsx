@@ -23,10 +23,8 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">☀</span>
-              </div>
-              <span className="text-xl font-bold text-gray-900">Green Sun Innovations</span>
+              <img src="/logo.png" alt="BRL Renewable Energies" className="h-12 w-auto object-contain rounded-full shadow-sm" />
+              <span className="text-xl font-bold text-gray-900">BRL RENEWABLE ENERGIES PVT LTD</span>
             </div>
           </Link>
 

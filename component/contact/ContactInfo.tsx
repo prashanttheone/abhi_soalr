@@ -111,7 +111,7 @@ export default function ContactInfo() {
               Frequently Asked Questions
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Find quick answers to common questions about solar energy and Green Sun Innovations.
+              Find quick answers to common questions about solar energy and BRL RENEWABLE ENERGIES PVT LTD.
             </p>
           </div>
 

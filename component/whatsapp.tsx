@@ -15,8 +15,8 @@ const whatsappUrl = `https://wa.me/${phoneNumber.replace(
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-8 right-8 z-40 group"
-      aria-label="Contact Green Sun Innovations on WhatsApp - Official Channel"
-      title="Chat with Green Sun Innovations on WhatsApp"
+      aria-label="Contact BRL RENEWABLE ENERGIES PVT LTD on WhatsApp - Official Channel"
+      title="Chat with BRL RENEWABLE ENERGIES PVT LTD on WhatsApp"
     >
       {/* Main Button */}
       <div className="relative">

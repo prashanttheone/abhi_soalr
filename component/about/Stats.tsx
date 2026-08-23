@@ -86,7 +86,7 @@ export default function Stats() {
         {/* Additional Impact Text */}
         <div className="mt-16 p-8 lg:p-12 bg-gradient-to-r from-green-600/20 to-blue-600/20 rounded-2xl border border-green-500/30 text-center">
           <p className="text-lg lg:text-xl text-gray-100 leading-relaxed">
-            Every solar installation at Green Sun Innovations represents a commitment to a sustainable future. 
+            Every solar installation at BRL RENEWABLE ENERGIES PVT LTD represents a commitment to a sustainable future. 
             Our customers collectively save <span className="text-green-400 font-bold">10Cr+ annually</span> on energy costs 
             while preventing <span className="text-blue-400 font-bold">15 million tons of CO₂ emissions</span> from entering our atmosphere.
           </p>

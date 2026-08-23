@@ -286,7 +286,7 @@ function LoginForm() {
           <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-green-500 to-blue-600 rounded-full mb-4">
             <span className="text-white font-bold text-2xl">☀</span>
           </div>
-          <h1 className="text-2xl font-bold text-gray-900">Green Sun Innovations</h1>
+          <h1 className="text-2xl font-bold text-gray-900">BRL RENEWABLE ENERGIES PVT LTD</h1>
           <p className="text-gray-600 mt-2">Welcome back! Please login to continue</p>
         </div>
 

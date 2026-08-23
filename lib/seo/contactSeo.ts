@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
+import { locationSeoData } from './locationdata';
 
 export const contactSeo: Metadata = {
-  title: 'Contact Abhi Solar | Get a Free Solar Consultation & Quote',
-  description: 'Ready to switch to solar? Contact Abhi Solar for a free site assessment, solar system sizing, and quotation. Find out your solar subsidy eligibility today.',
+  title: 'Contact BRL RENEWABLE ENERGIES PVT LTD | Get a Free Solar Consultation & Quote',
+  description: 'Ready to switch to solar? Contact BRL RENEWABLE ENERGIES PVT LTD for a free site assessment, solar system sizing, and quotation. Find out your solar subsidy eligibility today.',
   keywords: [
+    ...(locationSeoData.keywords as string[]),
     'rooftop solar estimate',
     'solar panel shop in Chennai',
     'contact solar dealer in Delhi NCR',
@@ -24,7 +26,7 @@ export const contactSeo: Metadata = {
     'get solar quote in Bangalore',
     'solar sizing expert',
     'contact solar dealer in Hyderabad',
-    'contact abhi solar',
+    'contact BRL RENEWABLE ENERGIES PVT LTD',
     'solar battery quotation',
     'contact solar dealer in Jaipur',
     'solar inverter estimate',
@@ -275,25 +277,25 @@ export const contactSeo: Metadata = {
     'reduce electricity bill 7',
     'reduce electricity bill 8'
   ],
-  authors: [{ name: 'Abhi Solar' }],
-  creator: 'Abhi Solar',
-  publisher: 'Abhi Solar',
+  authors: [{ name: 'BRL RENEWABLE ENERGIES PVT LTD' }],
+  creator: 'BRL RENEWABLE ENERGIES PVT LTD',
+  publisher: 'BRL RENEWABLE ENERGIES PVT LTD',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   openGraph: {
-    title: 'Contact Abhi Solar | Get a Free Solar Consultation & Quote',
-    description: 'Ready to switch to solar? Contact Abhi Solar for a free site assessment, solar system sizing, and quotation. Find out your solar subsidy eligibility today.',
+    title: 'Contact BRL RENEWABLE ENERGIES PVT LTD | Get a Free Solar Consultation & Quote',
+    description: 'Ready to switch to solar? Contact BRL RENEWABLE ENERGIES PVT LTD for a free site assessment, solar system sizing, and quotation. Find out your solar subsidy eligibility today.',
     url: 'https://makingindiagreen.in',
-    siteName: 'Abhi Solar',
+    siteName: 'BRL RENEWABLE ENERGIES PVT LTD',
     images: [
       {
         url: 'https://makingindiagreen.in/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Contact Abhi Solar | Get a Free Solar Consultation & Quote',
+        alt: 'Contact BRL RENEWABLE ENERGIES PVT LTD | Get a Free Solar Consultation & Quote',
       },
     ],
     locale: 'en_IN',
@@ -301,8 +303,8 @@ export const contactSeo: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact Abhi Solar | Get a Free Solar Consultation & Quote',
-    description: 'Ready to switch to solar? Contact Abhi Solar for a free site assessment, solar system sizing, and quotation. Find out your solar subsidy eligibility today.',
+    title: 'Contact BRL RENEWABLE ENERGIES PVT LTD | Get a Free Solar Consultation & Quote',
+    description: 'Ready to switch to solar? Contact BRL RENEWABLE ENERGIES PVT LTD for a free site assessment, solar system sizing, and quotation. Find out your solar subsidy eligibility today.',
     creator: '@abhisolar',
     images: ['https://makingindiagreen.in/images/twitter-image.jpg'],
   },

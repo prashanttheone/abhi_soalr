@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
+import { locationSeoData } from './locationdata';
 
 export const serviceSeo: Metadata = {
-  title: 'Solar Energy Services | Residential, Commercial & Industrial | Abhi Solar',
+  title: 'Solar Energy Services | Residential, Commercial & Industrial | BRL RENEWABLE ENERGIES PVT LTD',
   description: 'Explore our solar energy services including residential rooftop solar, commercial solar plants, industrial solar solutions, and PM-KUSUM agricultural solar pumps.',
   keywords: [
+    ...(locationSeoData.keywords as string[]),
     'off grid solar for home',
     'solar inverter installation services for agriculture',
     'solar battery for factory',
@@ -275,25 +277,25 @@ export const serviceSeo: Metadata = {
     'why choose solar energy 10',
     'why choose solar energy 11'
   ],
-  authors: [{ name: 'Abhi Solar' }],
-  creator: 'Abhi Solar',
-  publisher: 'Abhi Solar',
+  authors: [{ name: 'BRL RENEWABLE ENERGIES PVT LTD' }],
+  creator: 'BRL RENEWABLE ENERGIES PVT LTD',
+  publisher: 'BRL RENEWABLE ENERGIES PVT LTD',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   openGraph: {
-    title: 'Solar Energy Services | Residential, Commercial & Industrial | Abhi Solar',
+    title: 'Solar Energy Services | Residential, Commercial & Industrial | BRL RENEWABLE ENERGIES PVT LTD',
     description: 'Explore our solar energy services including residential rooftop solar, commercial solar plants, industrial solar solutions, and PM-KUSUM agricultural solar pumps.',
     url: 'https://makingindiagreen.in',
-    siteName: 'Abhi Solar',
+    siteName: 'BRL RENEWABLE ENERGIES PVT LTD',
     images: [
       {
         url: 'https://makingindiagreen.in/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Solar Energy Services | Residential, Commercial & Industrial | Abhi Solar',
+        alt: 'Solar Energy Services | Residential, Commercial & Industrial | BRL RENEWABLE ENERGIES PVT LTD',
       },
     ],
     locale: 'en_IN',
@@ -301,7 +303,7 @@ export const serviceSeo: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Solar Energy Services | Residential, Commercial & Industrial | Abhi Solar',
+    title: 'Solar Energy Services | Residential, Commercial & Industrial | BRL RENEWABLE ENERGIES PVT LTD',
     description: 'Explore our solar energy services including residential rooftop solar, commercial solar plants, industrial solar solutions, and PM-KUSUM agricultural solar pumps.',
     creator: '@abhisolar',
     images: ['https://makingindiagreen.in/images/twitter-image.jpg'],

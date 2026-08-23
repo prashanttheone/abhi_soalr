@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
+import { locationSeoData } from './locationdata';
 
 export const gallerySeo: Metadata = {
-  title: 'Our Solar Installations Gallery | Abhi Solar Projects',
+  title: 'Our Solar Installations Gallery | BRL RENEWABLE ENERGIES PVT LTD Projects',
   description: 'View our portfolio of successful solar installations across residential rooftops, commercial buildings, and industrial plants in India.',
   keywords: [
+    ...(locationSeoData.keywords as string[]),
     'rooftop solar projects in Lucknow',
     'solar installation photos in Surat',
     'rooftop solar projects in Delhi NCR',
@@ -43,7 +45,7 @@ export const gallerySeo: Metadata = {
     'solar commercial projects showcase',
     'solar installation photos in Delhi NCR',
     'rooftop solar projects in Indore',
-    'abhi solar gallery',
+    'BRL RENEWABLE ENERGIES PVT LTD gallery',
     'solar installation photos in Mumbai',
     'factory solar installation images',
     'rooftop solar projects in Nagpur',
@@ -275,25 +277,25 @@ export const gallerySeo: Metadata = {
     'reduce electricity bill 11',
     'reduce electricity bill 12'
   ],
-  authors: [{ name: 'Abhi Solar' }],
-  creator: 'Abhi Solar',
-  publisher: 'Abhi Solar',
+  authors: [{ name: 'BRL RENEWABLE ENERGIES PVT LTD' }],
+  creator: 'BRL RENEWABLE ENERGIES PVT LTD',
+  publisher: 'BRL RENEWABLE ENERGIES PVT LTD',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   openGraph: {
-    title: 'Our Solar Installations Gallery | Abhi Solar Projects',
+    title: 'Our Solar Installations Gallery | BRL RENEWABLE ENERGIES PVT LTD Projects',
     description: 'View our portfolio of successful solar installations across residential rooftops, commercial buildings, and industrial plants in India.',
     url: 'https://makingindiagreen.in',
-    siteName: 'Abhi Solar',
+    siteName: 'BRL RENEWABLE ENERGIES PVT LTD',
     images: [
       {
         url: 'https://makingindiagreen.in/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Our Solar Installations Gallery | Abhi Solar Projects',
+        alt: 'Our Solar Installations Gallery | BRL RENEWABLE ENERGIES PVT LTD Projects',
       },
     ],
     locale: 'en_IN',
@@ -301,7 +303,7 @@ export const gallerySeo: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Our Solar Installations Gallery | Abhi Solar Projects',
+    title: 'Our Solar Installations Gallery | BRL RENEWABLE ENERGIES PVT LTD Projects',
     description: 'View our portfolio of successful solar installations across residential rooftops, commercial buildings, and industrial plants in India.',
     creator: '@abhisolar',
     images: ['https://makingindiagreen.in/images/twitter-image.jpg'],
