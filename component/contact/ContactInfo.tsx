@@ -22,8 +22,8 @@ export default function ContactInfo() {
       icon: '🏢',
       title: 'Visit Us',
       description: 'Come see our solar installations',
-      contact: 'Green Son Innovation',
-      subtext: 'Nirjalahan, Ratanpura, Gopalganj, Bihar 841501',
+      contact: 'BRL RENEWABLE ENERGIES PVT LTD',
+      subtext: '02, Nirjalahan, Kuchaikote, Gopalganj, Bihar 841501',
       link: '#',
     },
     {

@@ -24,6 +24,7 @@ export default function Footer() {
       { label: 'Cookie Policy', href: '#' },
     ],
     Contact: [
+      { label: '02, Nirjalahan, Kuchaikote, Gopalganj, Bihar 841501', href: '/contact' },
       { label: 'Email: 28point.greenenergy@gmail.com', href: 'mailto:28point.greenenergy@gmail.com' },
       { label: 'Phone:+91620029429', href: 'tel:+91620029429' },
       { label: 'Hours: Mon-Fri 9AM-6PM EST', href: '#' },
